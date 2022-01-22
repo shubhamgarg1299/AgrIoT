@@ -1,57 +1,22 @@
-# ESP8266 basic example for Azure IoT Central
+# AgrIoT
 
-- Visit [AzureIoTCentral](https://apps.azureiotcentral.com) and create a `new application`.
-- Select `Sample Devkits`
-- Add a new `mxchip` device. (a real device) (under `Device Explorer`)
-- Browse into device UI (by clicking to name of the device under `Device explorer`)
-- Click/open `Connect` at top-right of the device UI
-- Grab `scopeId`, `device Id` and `primary key` and fill the necessary parts under `ESP8266.ino`
+Industry*:
+Earth
 
-```
-#define WIFI_SSID "<ENTER WIFI SSID HERE>"
-#define WIFI_PASSWORD "<ENTER WIFI PASSWORD HERE>"
+Project Title*:
+Smart Irrigation System
 
-const char* SCOPE_ID = "<ENTER SCOPE ID HERE>";
-const char* DEVICE_ID = "<ENTER DEVICE ID HERE>";
-const char* DEVICE_KEY = "<ENTER DEVICE primary/secondary KEY HERE>";
-```
+Problem Statement/Opportunity*:
+The project provides following Solutions: 1) Technical advancement in the field of agriculture. 2) Monitoring Temperature and Humidity of the Field 3) Reduction in the effort of farmers.
 
-Compile it! and deploy to your device. (see below)
+Project Description*:
+Smart farming is a management concept focused on providing the agricultural industry with the infrastructure to leverage advanced technology – including the cloud and the internet of things (IoT) – for tracking, monitoring, automating and analyzing operations. Also known as precision agriculture, smart farming is software-managed and sensor-monitored. Soil moisture information plays an important role in environmental monitoring, agricultural production and hydrological studies. Particularly, agricultural yield depends on several growing parameters like temperature, humidity, soil moisture and pH of the soil, etc. The objective of this project is to design a simple, easy methodology to monitor and indicate the level of soil moisture, temperature and humidity levels that are continuously controlled in order to achieve maximum plant growth and simultaneously optimize and the monitor the sensor data using Azure Services. In order to replace expensive controllers in current available systems, the NodeMCU will be used in this project as it is an affordable microcontroller. The NodeMCU will analyze signals from sensors such as temperature, humidity, etc. The Project uses IoT Central Application, Azure Services and IoT Central Hub Services. The data from nodemcu is transferred to IoT Central Application via the IoT Central Hub and then the data is displayed in the form of graphs which can be accessed by IoT Central Application accounts of the azure services and the user can easily view or monitor the field parameters.
 
-- Download Arduino-CLI from [this link](https://github.com/arduino/arduino-cli#download-the-latest-stable-release)
-- FOR WINDOWS, use version 0.3.3 => [download](https://github.com/arduino/arduino-cli/releases/download/0.3.3-alpha.preview/arduino-cli-0.3.3-alpha.preview-windows.zip)
-- FOR WINDOWS, you will need a [driver for USB to UART](https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers)
-- Add additional url to board manager in arduino-cli.yml (this is usually located in the same folder of CLI executable)
+Primary Azure Technology*:
+Azure IoT Central, Azure IoT Hub, Azure Resource Manager
 
-```
-board_manager:
-  additional_urls:
-  - http://arduino.esp8266.com/stable/package_esp8266com_index.json
-```
-Setup the environment; (under the project folder)
-```
-arduino-cli-0.3.... core update-index
-arduino-cli-0.3.... core install esp8266:esp8266
-arduino-cli-0.3.... board attach esp8266:esp8266:nodemcu
-```
+GitHub Repo:
 
-Compile!
-```
-arduino-cli-0.3.... compile
-```
+Azure Demo URL:
 
-Upload
-```
-arduino-cli-0.3.... upload -p <PORT / DEV?? i.e. => /dev/cu.SLAB_USBtoUART >
-```
-
-Monitoring?
-
-```
-npm install -g nodemcu-tool
-```
-
-Assuming the port/dev for the board is `/dev/cu.SLAB_USBtoUART`
-```
-nodemcu-tool -p /dev/cu.SLAB_USBtoUART -b 9600 terminal
-```
+Video URL:
