@@ -19,4 +19,4 @@ GitHub Repo: https://github.com/shubhamgarg1299/AgrIoT.git
 
 Azure Demo URL: https://agriot.azureiotcentral.com
 
-Video URL:
+Video URL: https://drive.google.com/file/d/1jaTUGAQNC9xmJZsvCbxpdBq_abVHVfDZ/view?usp=sharing
