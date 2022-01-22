@@ -15,8 +15,8 @@ Smart farming is a management concept focused on providing the agricultural indu
 Primary Azure Technology*:
 Azure IoT Central, Azure IoT Hub, Azure Resource Manager
 
-GitHub Repo:
+GitHub Repo: https://github.com/shubhamgarg1299/AgrIoT.git
 
-Azure Demo URL:
+Azure Demo URL: https://agriot.azureiotcentral.com
 
 Video URL:
